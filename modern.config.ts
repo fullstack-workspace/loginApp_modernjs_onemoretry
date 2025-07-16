@@ -27,15 +27,15 @@ export default defineConfig({
     appTools({
       bundler: 'rspack', // Set to 'webpack' to enable webpack
     }),
-    moduleFederationPlugin(
-      // {
-      //   config: {
-      //     name: 'remote',
-      //     remotes: {
-      //       remoteApp: `remoteApp@https://organic-space-xylophone-pwx476jjq42rq7v-3051.app.github.dev/remoteEntry.js`
-      //     },
-      //   }
-      // }
-    ),
+    // moduleFederationPlugin(
+    //   // {
+    //   //   config: {
+    //   //     name: 'remote',
+    //   //     remotes: {
+    //   //       remoteApp: `remoteApp@https://organic-space-xylophone-pwx476jjq42rq7v-3051.app.github.dev/remoteEntry.js`
+    //   //     },
+    //   //   }
+    //   // }
+    // ),
   ],
 });
