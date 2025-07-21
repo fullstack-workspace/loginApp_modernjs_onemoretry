@@ -69,7 +69,7 @@ export default {
 **Note:**  
 If you move or restart your Codespace, the domain may change. Always update `dev.assetPrefix` to match your current Codespaces URL.
 
-### Making producer app ports visibility to public
+### Making producer app port visibility to public
 
 To avoid CORS error while accessing producer app in consumer
 
