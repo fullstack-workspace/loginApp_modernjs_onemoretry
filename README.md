@@ -69,3 +69,15 @@ export default {
 **Note:**  
 If you move or restart your Codespace, the domain may change. Always update `dev.assetPrefix` to match your current Codespaces URL.
 
+## Making Ports Public in GitHub Codespaces
+
+When using GitHub Codespaces, some services might need to be accessed publicly (outside your Codespace).  
+To make a port visible publicly:
+
+1. Open your Codespace.
+2. Go to the **Ports** tab (usually at the bottom or side panel).
+3. Find the port you want to expose.
+4. Right-click on the port.
+5. Select **Port Visibility** > **Public**.
+
+This allows anyone with the link to access the service running on that port.
