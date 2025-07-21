@@ -36,13 +36,13 @@ npm serve
 
 For more information, see the [Modern.js documentation](https://modernjs.dev/en).
 
+## Deployment
 
-
-## Configuring `dev.assetPrefix` for GitHub Codespaces
+### Configuring `dev.assetPrefix` for GitHub Codespaces
 
 When running this Modern.js remote app on a [GitHub Codespace](https://docs.github.com/en/codespaces), you need to set the `dev.assetPrefix` in your `modern.config.ts` to your deployed Codespaces domain. This ensures that assets are loaded correctly from the remote environment.
 
-### Example
+#### Example
 
 Suppose your Codespace is running at:
 
