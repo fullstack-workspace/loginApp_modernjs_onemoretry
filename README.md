@@ -36,7 +36,7 @@ npm serve
 
 For more information, see the [Modern.js documentation](https://modernjs.dev/en).
 
-## Deployment
+## Deployment to Github Codespaces
 
 ### Configuring `dev.assetPrefix` for GitHub Codespaces
 
@@ -69,10 +69,9 @@ export default {
 **Note:**  
 If you move or restart your Codespace, the domain may change. Always update `dev.assetPrefix` to match your current Codespaces URL.
 
-## Making Ports Public in GitHub Codespaces
+### Making producer app ports visibility to public
 
-When using GitHub Codespaces, some services might need to be accessed publicly (outside your Codespace).  
-To make a port visible publicly:
+To avoid CORS error while accessing producer app in consumer
 
 1. Open your Codespace.
 2. Go to the **Ports** tab (usually at the bottom or side panel).
@@ -80,4 +79,4 @@ To make a port visible publicly:
 4. Right-click on the port.
 5. Select **Port Visibility** > **Public**.
 
-This allows anyone with the link to access the service running on that port.
+This allows anyone with the link to access the app running on that port.
