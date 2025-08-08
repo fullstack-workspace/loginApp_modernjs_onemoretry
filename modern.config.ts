@@ -1,8 +1,10 @@
 import { appTools, defineConfig } from '@modern-js/app-tools';
 import { moduleFederationPlugin } from '@module-federation/modern-js';
 
-const loginCodespaceName = process.env.LOGIN_APP_CODESPACE_SUBDOMAIN;
-const loginPort = Number.parseInt(process.env.LOGIN_APP_PORT || '3051', 10);
+// const loginCodespaceName = process.env.LOGIN_APP_CODESPACE_SUBDOMAIN;
+// const loginPort = Number.parseInt(process.env.LOGIN_APP_PORT || '3051', 10);
+
+const assetPrefix = process.env.LOGIN_APP_URL;
 
 export default defineConfig({
   // tools: {
@@ -16,8 +18,12 @@ export default defineConfig({
   //   }
   // },
   dev: {
-    assetPrefix: `https://${loginCodespaceName}-${loginPort}.app.github.dev/`,
-    port: loginPort,
+    // Asset prefix url and port required for github codespace
+    // assetPrefix: `https://${loginCodespaceName}-${loginPort}.app.github.dev/`,
+    // port: loginPort,
+
+    // Asset prefix url required for vercel
+    assetPrefix: assetPrefix,
   },
   runtime: {
     router: true,
